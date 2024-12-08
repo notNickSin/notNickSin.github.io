@@ -1,2 +1,29 @@
 <!DOCTYPE html>
-Hello World
+import React from 'react';
+
+const TrafficLightButtons = () => {
+  return (
+    <div className="flex justify-center items-center space-x-4 p-4">
+      <button 
+        className="w-20 h-20 rounded-full bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition-colors"
+        aria-label="Red Button"
+      >
+        Red
+      </button>
+      <button 
+        className="w-20 h-20 rounded-full bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-opacity-50 transition-colors"
+        aria-label="Yellow Button"
+      >
+        Yellow
+      </button>
+      <button 
+        className="w-20 h-20 rounded-full bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-colors"
+        aria-label="Green Button"
+      >
+        Green
+      </button>
+    </div>
+  );
+};
+
+export default TrafficLightButtons;
